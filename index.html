@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<!--
+This page makes a Mad Lib story. For an example of a similar page, go here:
+
+http://www.redkid.net/madlibs/
+-->
+
+<html>
+<head>
+<title>My MadLib</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
+
+<body>
+
+<h1 id="story">My Madlib</h1>
+
+<div class="data">
+
+    <p class="instructions">Enter a value into each field. Then press 'Make Story' to read the story you made.</p>
+
+    <!--
+    Request that the user type in at least 15 words in the form below. Ask for the
+    words by part of speach (noun, verb, adjective, adverb, proper noun, etc.) You
+    can also ask for things like places. Use field ids like noun1, noun2, verb1, etc.
+
+    Then make a button with the text "Make Story". The Make Story button should call
+    your makeStory() function which gets all of the form data and then builds and
+    displays your finished story.
+    -->
+
+    <form>
+      Adjective:<br><input type="text" id='adj1'> </br>
+      Adjective:<br><input type="text" id='adj2'> </br>
+      Adjective:<br><input type="text" id='adj3'> </br>
+      Adjective:<br><input type="text" id='adj4'> </br>
+      Noun:<br><input type="text" id='noun1'> </br>
+      Noun:<br><input type="text" id='noun2'> </br>
+      Noun:<br><input type="text" id='noun3'> </br>
+      Noun:<br><input type="text" id='noun4'> </br>
+      Noun:<br><input type="text" id='noun5'> </br>
+      Noun:<br><input type="text" id='noun6'> </br>
+      Number:<br><input type="text" id='number'> </br>
+      Part of the Body:<br><input type="text" id='potb1'> </br>
+      Different Part of the Body:<br><input type="text" id='potb2'> </br>
+      Plural Noun:<br><input type="text" id='pnoun'> </br>
+      Type of Liquid:<br><input type="text" id='liquid'> </br>
+
+      <input type="button" onclick="makeStory(); addPicture(); changeColor();" value="Make Story">
+    </form>
+
+</div>
+
+<div class="story">
+    <h2 id="title"></h2>
+
+    <p id="p1">Complete the form to the left to see a story.</p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+    <p id="p7"></p>
+    <p id="p8"></p>
+
+    <img id="picture" style="width:200px">
+</div>
+
+<!-- don't forget to link to the story_maker.js file here. -->
+<script src="story_maker.js"></script>
+
+</body>
+</html>
